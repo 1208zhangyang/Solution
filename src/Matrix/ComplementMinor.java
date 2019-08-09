@@ -50,8 +50,9 @@ public class ComplementMinor {
 			return Double.MIN_VALUE;
 		}
 		// 若为1*1矩阵则直接返回
-		if (mat.getRow() == 1)
+		if (mat.getRow() == 1) {
 			return mat.getMatrix(0, 0);
+		}
 		// 若为2*2矩阵则直接计算返回结果
 		if (mat.getRow() == 2) {
 			// System.out.println(mat.getMatrix(0, 0) * mat.getMatrix(1, 1) -
